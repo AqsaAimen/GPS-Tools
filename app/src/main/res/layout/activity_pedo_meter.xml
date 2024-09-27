@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_icon"
+    android:keepScreenOn="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_collapseMode="pin"
+        app:titleTextColor="@android:color/white"
+        android:background="#267FC4"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/drawer_icon_pedometer"
+            android:layout_width="32dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedometer"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/toolbar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/bannerFb_pedometer_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+
+
+    <LinearLayout
+            android:id="@+id/linear_top"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/row_1"
+                android:paddingBottom="@dimen/row_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:id="@+id/box_steps"
+                    android:paddingRight="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textSize="@dimen/value"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/step_value"
+                        android:background="@color/grey_transparent"
+                        android:paddingLeft="@dimen/padding"
+                        android:paddingTop="@dimen/padding"
+                        android:paddingRight="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+
+                    <TextView
+                        android:textSize="@dimen/units"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/step_units"
+                        android:background="@color/grey_transparent"
+                        android:paddingBottom="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/steps"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:id="@+id/box_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textSize="@dimen/value"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/distance_value"
+                        android:background="@color/grey_transparent"
+                        android:paddingLeft="@dimen/padding"
+                        android:paddingTop="@dimen/padding"
+                        android:paddingRight="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+
+                    <TextView
+                        android:textSize="@dimen/units"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/distance_units"
+                        android:background="@color/grey_transparent"
+                        android:paddingBottom="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="miles"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/row_2"
+                android:paddingBottom="@dimen/row_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/box_pace"
+                    android:paddingRight="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textSize="@dimen/small_value"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/pace_value"
+                        android:background="@color/grey_transparent"
+                        android:paddingLeft="@dimen/padding"
+                        android:paddingTop="@dimen/padding"
+                        android:paddingRight="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+
+                    <TextView
+                        android:textSize="@dimen/units"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/pace_units"
+                        android:background="@color/grey_transparent"
+                        android:paddingBottom="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/steps_per_minute"
+                        android:singleLine="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/box_speed"
+                    android:paddingRight="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textSize="@dimen/small_value"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/speed_value"
+                        android:background="@color/grey_transparent"
+                        android:paddingLeft="@dimen/padding"
+                        android:paddingTop="@dimen/padding"
+                        android:paddingRight="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+
+                    <TextView
+                        android:textSize="@dimen/units"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/speed_units"
+                        android:background="@color/grey_transparent"
+                        android:paddingBottom="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="miles/h"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/box_calories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textSize="@dimen/small_value"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/calories_value"
+                        android:background="@color/grey_transparent"
+                        android:paddingLeft="@dimen/padding"
+                        android:paddingTop="@dimen/padding"
+                        android:paddingRight="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"/>
+
+                    <TextView
+                        android:textSize="@dimen/units"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/calories_units"
+                        android:background="@color/grey_transparent"
+                        android:paddingBottom="@dimen/padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="calories burned"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="50dp">
+
+
+                    <Button
+                        android:id="@+id/buttonStartStop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:layout_marginRight="10dp"
+                        android:background="#163833"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:text="@string/start"
+                        android:singleLine="true"/>
+
+                    <Button
+                        android:id="@+id/buttonReset"
+                        android:text="@string/reset"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:background="#3178AC"
+                        android:textColor="#ffffff"
+                        android:fontFamily="@font/allerta"
+                        android:textAllCaps="false"
+                        android:singleLine="true"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_below="@+id/linear_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bannerFb_pedometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:gravity="bottom|center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/ad_view_pedometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

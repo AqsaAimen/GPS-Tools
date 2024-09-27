@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="@dimen/_220sdp" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="@dimen/_8sdp" app:cardMaxElevation="@dimen/_12sdp">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Markar LatLong"/>
+        <TextView android:textStyle="bold" android:id="@+id/text_latlong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Please select Location First "/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cl="http://schemas.android.com/apk/lib/com.pcmehanik.smarttoolkit.PitchGauge" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ListPreference android:entries="@array/temperature_units_array" android:title="@string/units" android:key="temperature_units" android:defaultValue="M" android:entryValues="@array/temperature_units_values_array"/>
+</PreferenceScreen>

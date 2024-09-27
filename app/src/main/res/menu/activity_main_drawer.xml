@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_star_rate"
+            android:title="Rate us" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_priv_policy"
+            android:icon="@drawable/ic_more_horiz"
+            android:title="Privacy policy" />
+        <item
+            android:id="@+id/nav_more"
+            android:icon="@drawable/ic_security"
+            android:title="More Apps" />
+
+        <item
+            android:id="@+id/nav_remove_add"
+            android:icon="@drawable/remove_ad"
+            android:title="Remove Ad" />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_collapseMode="pin"
+            app:titleTextColor="@android:color/white"
+            android:background="#267FC4"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="Home"
+                    android:layout_marginEnd="70dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ScrollView
+            android:background="@drawable/background_icon"
+            android:id="@+id/mainScroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/cons_Ad_view"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginBottom="@dimen/_5sdp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <GridLayout
+                        android:id="@+id/grid_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="12"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="3"
+                        android:columnOrderPreserved="false"
+                        android:orientation="horizontal"
+                        android:rowCount="4">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_converter"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#eb4142"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/image_converter"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/conv" />
+
+                                <TextView
+                                    android:id="@+id/Name_converter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#8f1514"
+                                    android:gravity="center"
+                                    android:text="Converter"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_area"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#367eae"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/image_area"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/area_calculator" />
+
+                                <TextView
+                                    android:id="@+id/name_area"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#2e688e"
+                                    android:gravity="center"
+                                    android:text="Area Calculator"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_distance_calculator"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#a4cd2f"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/image_distance_calculator"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/replacement_icon" />
+
+                                <TextView
+                                    android:id="@+id/name_distance_calculator"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#7f9a33"
+                                    android:gravity="center"
+                                    android:text="Distance Calculator"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_speedometer"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#faad0f"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/image_speedometer"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/ic_speedometer" />
+
+
+                                <TextView
+                                    android:id="@+id/Name_speedometer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#a5781a"
+                                    android:gravity="center"
+                                    android:text="Speedometer"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_Altimeter"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#77c4d6"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/image_altimeter"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/altimeter" />
+
+                                <TextView
+                                    android:id="@+id/name_altimeter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#4b8d9b"
+                                    android:gravity="center"
+                                    android:text="Altimeter"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_sound_detector"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#eb4142"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/image_sound_detector"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/ic_sound_detection" />
+
+                                <TextView
+                                    android:id="@+id/Name_sound_detector"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#8f1514"
+                                    android:gravity="center"
+                                    android:text="Sound Detector"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_pedometer"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#77c4d6"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/image_pedometer"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/ic_pedometer" />
+
+                                <TextView
+                                    android:id="@+id/name_pedometer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#4b8d9b"
+                                    android:gravity="center"
+                                    android:text="Pedometer"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_compass"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#a4cd2f"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/image_compass"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/ic_compass" />
+
+                                <TextView
+                                    android:id="@+id/name_compass"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#7f9a33"
+                                    android:gravity="center"
+                                    android:text="Compass"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_nearby_object"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#f8b010"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/image_nearby_object"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/ic_nearby_object" />
+
+                                <TextView
+                                    android:id="@+id/name_nearby_object"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#a5781a"
+                                    android:gravity="center"
+                                    android:text="Object Detector"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_mirror"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="#367eae"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardMaxElevation="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/image_mirror"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/ic_mirror" />
+
+                                <TextView
+                                    android:id="@+id/name_mirror"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#2e688e"
+                                    android:gravity="center"
+                                    android:text="Mirror"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </GridLayout>
+                    <LinearLayout
+                        android:id="@+id/bannerFb_main2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                         />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_Ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+            <include
+                android:id="@+id/smallAdBanner"
+                layout="@layout/my_bannar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+<!--            <com.google.android.gms.ads.AdView-->
+<!--                android:id="@+id/ad_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/mainDial"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="#80000000"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/diallayout"
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/dialgoeShowID"
+                    layout="@layout/activity_rate_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_navigationview"
+        android:fitsSystemWindows="true"
+        android:layout_marginBottom="@dimen/_100ssp"
+        app:headerLayout="@layout/nav_header_activity_home"
+        app:menu="@menu/activity_main_drawer" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+ <!-- This is a test ad unit ID -->

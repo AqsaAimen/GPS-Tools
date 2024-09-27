@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#50A9EC"
+    android:gravity="center"
+    tools:context=".Activities.Startup.SplashActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/gps_tool_icon"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#140303"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="GPS TOOLS" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<!--
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_splash"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circlular_image_empty"
+            android:layout_gravity="center_vertical|center_horizontal" />-->
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:indeterminate="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="#FFFFFF"
+            android:layout_marginTop="50dp"/>
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_altimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/random1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:visibility="gone"
+        ads:adSize="MEDIUM_RECTANGLE"
+        ads:adUnitId="ca-app-pub-3940256099942544/3419835294"/>
+
+</LinearLayout>

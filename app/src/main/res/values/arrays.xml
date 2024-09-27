@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="IO_array">
+        <item>@string/internal</item>
+        <item>@string/aux</item>
+        <item>@string/bt</item>
+    </array>
+    <array name="IO_values_array">
+        <item>IN</item>
+        <item>AUX</item>
+        <item>BT</item>
+    </array>
+    <array name="area_units_array">
+        <item>cm2</item>
+        <item>m2</item>
+        <item>km2</item>
+        <item>ha</item>
+        <item>in2</item>
+        <item>ft2</item>
+        <item>yd2</item>
+    </array>
+    <array name="benchmark_array">
+        <item>Distance</item>
+        <item>Speed</item>
+        <item>Time</item>
+    </array>
+    <array name="color_values_array">
+        <item>RDM</item>
+        <item>W</item>
+        <item>R</item>
+        <item>G</item>
+        <item>B</item>
+        <item>Y</item>
+        <item>C</item>
+        <item>M</item>
+    </array>
+    <array name="colors_array">
+        <item>@string/random</item>
+        <item>@string/white</item>
+        <item>@string/red</item>
+        <item>@string/green</item>
+        <item>@string/blue</item>
+        <item>@string/yellow</item>
+        <item>@string/cyan</item>
+        <item>@string/magenta</item>
+    </array>
+    <array name="conversion_types_array">
+        <item>@string/currency</item>
+        <item>@string/length</item>
+        <item>@string/area</item>
+        <item>@string/volume2</item>
+        <item>@string/weight</item>
+        <item>@string/temperature2</item>
+        <item>@string/data</item>
+        <item>@string/speed2</item>
+        <item>@string/pressure2</item>
+        <item>@string/power</item>
+        <item>@string/work</item>
+        <item>@string/fuel</item>
+    </array>
+    <array name="correction_values_array">
+        <item>-20</item>
+        <item>-19</item>
+        <item>-18</item>
+        <item>-17</item>
+        <item>-16</item>
+        <item>-15</item>
+        <item>-14</item>
+        <item>-13</item>
+        <item>-12</item>
+        <item>-11</item>
+        <item>-10</item>
+        <item>-9</item>
+        <item>-8</item>
+        <item>-7</item>
+        <item>-6</item>
+        <item>-5</item>
+        <item>-4</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </array>
+    <array name="corrections_array">
+        <item>-20 dB</item>
+        <item>-19 dB</item>
+        <item>-18 dB</item>
+        <item>-17 dB</item>
+        <item>-16 dB</item>
+        <item>-15 dB</item>
+        <item>-14 dB</item>
+        <item>-13 dB</item>
+        <item>-12 dB</item>
+        <item>-11 dB</item>
+        <item>-10 dB</item>
+        <item>-9 dB</item>
+        <item>-8 dB</item>
+        <item>-7 dB</item>
+        <item>-6 dB</item>
+        <item>-5 dB</item>
+        <item>-4 dB</item>
+        <item>-3 dB</item>
+        <item>-2 dB</item>
+        <item>-1 dB</item>
+        <item>0 dB</item>
+        <item>+1 dB</item>
+        <item>+2 dB</item>
+        <item>+3 dB</item>
+        <item>+4 dB</item>
+        <item>+5 dB</item>
+        <item>+6 dB</item>
+        <item>+7 dB</item>
+        <item>+8 dB</item>
+        <item>+9 dB</item>
+        <item>+10 dB</item>
+        <item>+11 dB</item>
+        <item>+12 dB</item>
+        <item>+13 dB</item>
+        <item>+14 dB</item>
+        <item>+15 dB</item>
+        <item>+16 dB</item>
+        <item>+17 dB</item>
+        <item>+18 dB</item>
+        <item>+19 dB</item>
+        <item>+20 dB</item>
+    </array>
+    <array name="country_codes">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </array>
+    <array name="currency_units_array">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>AUD</item>
+        <item>CHF</item>
+        <item>HUF</item>
+        <item>CZK</item>
+        <item>HRK</item>
+        <item>PLN</item>
+        <item>NOK</item>
+        <item>SEK</item>
+        <item>DKK</item>
+        <item>CAD</item>
+        <item>TRY</item>
+        <item>BGN</item>
+        <item>RON</item>
+        <item>JPY</item>
+        <item>LTL</item>
+        <item>RUB</item>
+        <item>BRL</item>
+        <item>CNY</item>
+        <item>HKD</item>
+        <item>IDR</item>
+        <item>INR</item>
+        <item>KRW</item>
+        <item>MXN</item>
+        <item>MYR</item>
+        <item>NZD</item>
+        <item>PHP</item>
+        <item>SGD</item>
+        <item>THB</item>
+        <item>ZAR</item>
+        <item>ILS</item>
+    </array>
+    <array name="data_units_array">
+        <item>bit(b)</item>
+        <item>Byte(B)</item>
+        <item>kB</item>
+        <item>MB</item>
+        <item>GB</item>
+        <item>TB</item>
+    </array>
+    <array name="exercise_type_preference">
+        <item>@string/exercise_type_walking</item>
+        <item>@string/exercise_type_running</item>
+    </array>
+    <array name="exercise_type_preference_values">
+        <item>walking</item>
+        <item>running</item>
+    </array>
+    <array name="fuel_units_array">
+        <item>l/100km</item>
+        <item>km/l</item>
+        <item>mpg(US)</item>
+        <item>mpg(UK)</item>
+    </array>
+    <array name="input_array">
+        <item>@string/internal</item>
+        <item>@string/aux</item>
+        <item>@string/bluetooth</item>
+    </array>
+    <array name="language_array">
+        <item>English</item>
+        <item>Deutsch</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>हिंदी</item>
+        <item>Indonesia</item>
+        <item>Italiano</item>
+        <item>日本語</item>
+        <item>한국어</item>
+        <item>Português</item>
+        <item>русский</item>
+        <item>Türk</item>
+        <item>Україна</item>
+        <item>中文</item>
+    </array>
+    <array name="language_values_array">
+        <item>en</item>
+        <item>de</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>hi</item>
+        <item>in</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>zh</item>
+    </array>
+    <array name="length_units_array">
+        <item>mm</item>
+        <item>cm</item>
+        <item>dm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>inch</item>
+        <item>ft</item>
+        <item>yd</item>
+        <item>mile</item>
+        <item>nmile</item>
+    </array>
+    <array name="power_units_array">
+        <item>W</item>
+        <item>kW</item>
+        <item>MW</item>
+        <item>HP</item>
+        <item>ps</item>
+        <item>kcal/s</item>
+        <item>kcal/h</item>
+    </array>
+    <array name="preferences_front_light_options">
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </array>
+    <array name="preferences_front_light_values">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </array>
+    <array name="pressure_units_array">
+        <item>Pa</item>
+        <item>hPa</item>
+        <item>kPa</item>
+        <item>MPa</item>
+        <item>bar(b)</item>
+        <item>mb</item>
+        <item>psi</item>
+    </array>
+    <array name="scale_array">
+        <item>60 dB</item>
+        <item>70 dB</item>
+        <item>80 dB</item>
+        <item>90 dB</item>
+        <item>100 dB</item>
+        <item>110 dB</item>
+        <item>120 dB</item>
+        <item>130 dB</item>
+        <item>140 dB</item>
+        <item>150 dB</item>
+        <item>160 dB</item>
+    </array>
+    <array name="scale_values_array">
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>110</item>
+        <item>120</item>
+        <item>130</item>
+        <item>140</item>
+        <item>150</item>
+        <item>160</item>
+    </array>
+    <array name="sensitivity_preference">
+        <item>@string/extra_high</item>
+        <item>@string/very_high</item>
+        <item>@string/high</item>
+        <item>@string/higher</item>
+        <item>@string/medium</item>
+        <item>@string/lower</item>
+        <item>@string/low</item>
+        <item>@string/very_low</item>
+        <item>@string/extra_low</item>
+    </array>
+    <array name="sensitivity_preference_values">
+        <item>1.9753</item>
+        <item>2.9630</item>
+        <item>4.4444</item>
+        <item>6.6667</item>
+        <item>10</item>
+        <item>15</item>
+        <item>22.5</item>
+        <item>33.75</item>
+        <item>50.625</item>
+    </array>
+    <array name="shoes_units_array">
+        <item>US</item>
+        <item>UK</item>
+        <item>EU</item>
+        <item>inch</item>
+        <item>cm</item>
+    </array>
+    <array name="speed_units_array">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+        <item>knot</item>
+        <item>mach</item>
+    </array>
+    <array name="temperature2_units_array">
+        <item>°C</item>
+        <item>°F</item>
+        <item>K</item>
+    </array>
+    <array name="temperature_units_array">
+        <item>@string/celsius</item>
+        <item>@string/fahrenheit</item>
+    </array>
+    <array name="temperature_units_values_array">
+        <item>C</item>
+        <item>F</item>
+    </array>
+    <array name="units_array">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </array>
+    <array name="units_values_array">
+        <item>M</item>
+        <item>I</item>
+    </array>
+    <array name="volume_units_array">
+        <item>ml</item>
+        <item>dl</item>
+        <item>l</item>
+        <item>cm3</item>
+        <item>m3</item>
+        <item>in3</item>
+        <item>ft3</item>
+        <item>yd3</item>
+        <item>gal(UK)</item>
+        <item>gal(US)</item>
+    </array>
+    <array name="weight_units_array">
+        <item>g</item>
+        <item>kg</item>
+        <item>t</item>
+        <item>lb</item>
+        <item>oz</item>
+    </array>
+    <array name="work_units_array">
+        <item>J</item>
+        <item>kJ</item>
+        <item>kWh</item>
+        <item>cal</item>
+        <item>kcal</item>
+    </array>
+</resources>

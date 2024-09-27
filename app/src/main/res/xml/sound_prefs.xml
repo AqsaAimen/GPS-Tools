@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cl="http://schemas.android.com/apk/lib/com.pcmehanik.smarttoolkit.PitchGauge" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ListPreference android:entries="@array/IO_array" android:title="@string/IO" android:key="IO" android:defaultValue="IN" android:entryValues="@array/IO_values_array"/>
+    <CheckBoxPreference android:title="@string/show_local_peaks" android:key="showPeaks" android:defaultValue="true"/>
+    <CheckBoxPreference android:title="@string/show_reference_line" android:key="showLine" android:defaultValue="true"/>
+    <ListPreference android:entries="@array/scale_array" android:title="@string/scale_max_value" android:key="scaleMax" android:defaultValue="120" android:entryValues="@array/scale_values_array"/>
+    <PreferenceScreen android:title="@string/calibration">
+        <ListPreference android:entries="@array/corrections_array" android:title="@string/overall" android:key="1" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="30 Hz" android:key="2" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="50 Hz" android:key="3" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="70 Hz" android:key="4" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="90 Hz" android:key="5" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="130 Hz" android:key="6" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="180 Hz" android:key="7" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="240 Hz" android:key="8" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="350 Hz" android:key="9" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="480 Hz" android:key="10" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="670 Hz" android:key="11" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="950 Hz" android:key="12" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="1300 Hz" android:key="13" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="1800 Hz" android:key="14" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="2600 Hz" android:key="15" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="3700 Hz" android:key="16" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="5200 Hz" android:key="17" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="7400 Hz" android:key="18" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="10000 Hz" android:key="19" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="14000 Hz" android:key="20" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+        <ListPreference android:entries="@array/corrections_array" android:title="20000 Hz" android:key="21" android:defaultValue="0" android:entryValues="@array/correction_values_array"/>
+    </PreferenceScreen>
+</PreferenceScreen>

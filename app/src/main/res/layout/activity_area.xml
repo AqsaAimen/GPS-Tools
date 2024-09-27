@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/framentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/street_Area"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:name="com.google.android.gms.maps.StreetViewPanoramaFragment"
+            android:id="@+id/map_street_Area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/map_Area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/mapArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewTop" android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/fbAdContainerTop"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_below="@+id/cardView"
+            app:cardElevation="@dimen/_4sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:id="@+id/textView_results"
+                    android:background="@drawable/edit_text_bg_new"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:ems="12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <View
+                    android:background="@color/darkGrey"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_results"
+                    app:layout_constraintEnd_toStartOf="@+id/cancel_latlng"
+                    app:layout_constraintTop_toTopOf="@+id/textView_results"/>
+
+                <ImageView
+                    android:id="@+id/cancel_latlng"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/cancel_latlng"
+                    android:contentDescription="@string/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_results"
+                    app:layout_constraintEnd_toEndOf="@+id/textView_results"
+                    app:layout_constraintTop_toTopOf="@+id/textView_results"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/mapTypeBtnArea"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:src="@drawable/map_types_btn_new"
+        android:layout_below="@+id/linear_layout"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/icon"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view_area"
+        android:padding="@dimen/_15sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_below="@+id/linear_layout"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/search_text"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@+id/rec_view_area"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/circular_shape"
+        android:contentDescription="@string/icon"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_search"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/myLocationBtnArea"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:src="@drawable/gps"
+        android:layout_below="@+id/search_text"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/icon"/>
+
+    <ImageView
+        android:id="@+id/routfinder_Area"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:src="@drawable/routefinder"
+        android:layout_below="@+id/mapTypeBtnArea"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/icon"/>
+
+    <ImageView
+        android:id="@+id/streetView_Area"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:src="@drawable/map_icon_new"
+        android:layout_below="@+id/routfinder_Area"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/icon"/>
+
+    <ImageView
+        android:id="@+id/history_Area"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:src="@drawable/history"
+        android:layout_below="@+id/streetView_Area"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/icon"/>
+
+    <ImageView
+        android:id="@+id/pdf_download"
+        android:padding="@dimen/_4sdp"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:src="@drawable/download"
+        android:layout_below="@+id/history_Area"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/icon"/>
+
+<!--    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/labelsLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_id"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/fbAdContainer"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/labelsLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>-->
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cl="http://schemas.android.com/apk/lib/com.pcmehanik.smarttoolkit.PitchGauge" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <CheckBoxPreference android:title="@string/use_led" android:key="useLed" android:defaultValue="true"/>
+    <ListPreference android:entries="@array/colors_array" android:title="@string/blink_color" android:key="color" android:defaultValue="RDM" android:entryValues="@array/color_values_array"/>
+</PreferenceScreen>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_160sdp"
+    android:id="@+id/card_view_area_cal"
+    android:visibility="invisible"
+    tools:visibility="visible"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_8sdp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cancel_area"
+                android:padding="@dimen/_4sdp"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@drawable/cancel"
+                android:background="#9CB6EB"
+                app:layout_constraintLeft_toRightOf="@+id/areaLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#2c2c2c"
+                android:gravity="center"
+                android:id="@+id/areaLabel"
+                android:background="#9CB6EB"
+                android:layout_width="match_parent"
+                android:layout_marginRight="35dp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="10dp"
+                android:text="@string/measure_area"
+                tools:ignore="MissingConstraints"/>
+
+            <ImageView
+                android:padding="@dimen/_4sdp"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@drawable/areadialog"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/areaM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/areaKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/areaft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/areaac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/areami"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/areaha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

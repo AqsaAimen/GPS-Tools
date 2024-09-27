@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_vieww"
+        android:layout_width="265dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="160dp"
+        android:layout_gravity="right"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:elevation="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardCornerRadius="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/allerta"
+        android:hint="Map Types"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="65dp"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_default_view_"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="Map"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/default_map_on"/>
+
+    <ImageView
+        android:id="@+id/image_satellite_view_"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="Map"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/satellite_on"/>
+
+    <ImageView
+        android:id="@+id/image_terrain_view_"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="Map"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/terrain_on"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="31dp"
+        android:fontFamily="@font/allerta"
+        android:text="Default"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/allerta"
+        android:text="Satellite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/allerta"
+        android:text="Terrain"/>
+
+        </GridLayout>
+    </androidx.cardview.widget.CardView>

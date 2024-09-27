@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "924997412176",
+    "firebase_url": "https://gps-tools-e6f1e.firebaseio.com",
+    "project_id": "gps-tools-e6f1e",
+    "storage_bucket": "gps-tools-e6f1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924997412176:android:e3cfbf30b8eb074d513855",
+        "android_client_info": {
+          "package_name": "com.gps.tools.speedometer.area.calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924997412176-cdq0ahf6n5n9hlpme1b877u2kkb1u8ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx_ipiNxNcJkLk2TNNPi4m3dW5IZK1TIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924997412176-cdq0ahf6n5n9hlpme1b877u2kkb1u8ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

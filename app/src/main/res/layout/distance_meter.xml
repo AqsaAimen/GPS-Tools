@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_170sdp"
+    android:id="@+id/card_view_area_dist"
+    android:visibility="invisible"
+    tools:visibility="visible"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_8sdp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cancel_distance"
+                android:padding="@dimen/_4sdp"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/cancel"
+                android:background="#9CB6EB"
+                app:layout_constraintLeft_toRightOf="@+id/distanceLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#2c2c2c"
+                android:gravity="center"
+                android:id="@+id/distanceLabel"
+                android:background="#9CB6EB"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="10dp"
+                android:text="Displacement"
+                android:textSize="16dp"
+                tools:ignore="MissingConstraints" />
+
+
+
+            <ImageView
+                android:padding="@dimen/_4sdp"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/distance"
+                android:background="#9CB6EB"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/distanceM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/distanceKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/distanceyd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/distancemi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/distancenm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/distanceft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="dkkfbvkjfb"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cl="http://schemas.android.com/apk/lib/com.pcmehanik.smarttoolkit.PitchGauge" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <EditTextPreference android:numeric="signed" android:title="@string/correction" android:key="ruler_correction" android:defaultValue="0"/>
+</PreferenceScreen>

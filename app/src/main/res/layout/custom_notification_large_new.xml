@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp">
+
+    <RelativeLayout
+            android:id="@+id/rel_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/image_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/icon"/>
+
+        <TextView
+                android:id="@+id/title"
+                style="Custom Notification Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/image_app"
+                android:layout_toRightOf="@+id/image_app"
+                android:text="title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@android:color/white"/>
+
+        <TextView
+                android:id="@+id/text"
+                style="Custom Notification Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_toEndOf="@+id/image_app"
+                android:layout_toRightOf="@+id/image_app"
+                android:text="text"
+                android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_lyt"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/icon" />
+</RelativeLayout>

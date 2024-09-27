@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cl="http://schemas.android.com/apk/lib/com.pcmehanik.smarttoolkit.PitchGauge" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ListPreference android:entries="@array/units_array" android:title="@string/units" android:key="units" android:defaultValue="M" android:entryValues="@array/units_values_array"/>
+    <CheckBoxPreference android:title="@string/smooth" android:key="smooth" android:defaultValue="false"/>
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cl="http://schemas.android.com/apk/lib/com.pcmehanik.smarttoolkit.PitchGauge" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ListPreference android:entries="@array/units_array" android:title="@string/units" android:key="units" android:defaultValue="M" android:entryValues="@array/units_values_array"/>
+    <ListPreference android:entries="@array/sensitivity_preference" android:title="@string/sensitivity" android:key="sensitivity" android:defaultValue="10" android:entryValues="@array/sensitivity_preference_values"/>
+    <EditTextPreference android:numeric="integer" android:title="@string/step_length_setting" android:key="step_length" android:defaultValue="80"/>
+    <EditTextPreference android:numeric="integer" android:title="@string/body_weight_setting" android:key="body_weight" android:defaultValue="70"/>
+    <ListPreference android:entries="@array/exercise_type_preference" android:title="@string/exercise_type_setting" android:key="exercise_type" android:defaultValue="walking" android:entryValues="@array/exercise_type_preference_values"/>
+</PreferenceScreen>

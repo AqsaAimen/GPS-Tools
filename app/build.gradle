@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+    buildToolsVersion "33.0.2"
+
+    defaultConfig {
+        applicationId "com.gps.tools.speedometer.area.calculator"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 15
+        versionName "1.0.15"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            resValue "string", "google_maps_api_key", "[AIzaSyA7Fght1Hb8KKFwDi2exqGKmETuzF4sSc8]"
+            minifyEnabled true
+            debuggable false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    buildFeatures{
+        viewBinding = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.gps.tools.speedometer.area.calculator'
+/*
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }*/
+}
+
+dependencies {
+   // implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+
+//......................................................................
+
+
+    implementation 'androidx.exifinterface:exifinterface:1.3.7'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android.material:material:1.13.0-alpha04'
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'org.jetbrains:annotations:23.0.0'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'com.google.android.gms:play-services-maps:19.0.0'
+    implementation 'com.jsibbold:zoomage:1.2.0'
+    implementation 'com.github.anastr:speedviewlib:1.3.1'
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation 'com.github.capur16:digitspeedviewlib:1.0.3'
+
+    implementation 'com.google.maps.android:android-maps-utils:0.4'
+    //implementation 'com.google.android.play:core:17.8.0'
+    //implementation 'com.google.android.play:app-update:2.1.0'
+        implementation 'com.android.billingclient:billing:7.0.0' // Use the latest version
+
+
+    //......... speed meter
+    implementation 'com.github.Pygmalion69:Gauge:1.5.1'
+    //......... spots dialog
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+
+
+    //TODO ads libraries
+    implementation 'com.google.android.gms:play-services-ads:23.2.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.16.0'
+
+    //......... crash analytics
+    implementation 'com.google.firebase:firebase-firestore:25.0.0'
+    implementation 'com.google.firebase:firebase-messaging:24.0.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.google.firebase:firebase-analytics:22.0.2'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-database:21.0.0'
+}
+apply plugin: 'com.google.gms.google-services'
